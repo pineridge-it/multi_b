@@ -1,2 +1,26 @@
 # bv (beads viewer) local config and caches
 .bv/
+
+# --- The Big One ---
+mcp_agent_mail/
+
+# --- Database Files (Very Important to ignore) ---
+# These are local state and can grow large/corrupt commits
+storage.sqlite3
+storage.sqlite3-shm
+storage.sqlite3-wal
+
+# --- Environment & Secrets ---
+# You have .env.example tracked (good), but make sure the real .env stays out
+.env
+.agent-mail.yaml
+
+# --- Node/Build Artifacts ---
+node_modules/
+dist/
+.beads/
+
+# --- Temporary/System Files ---
+~
+.DS_Store
+*.log
